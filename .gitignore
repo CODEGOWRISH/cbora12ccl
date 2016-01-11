@@ -1,0 +1,30 @@
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
+*zip
+*gz
+*bz
+*bz2
+*rpm
+*tar
+*.Z
+
+# Berkshelf
+.vagrant
+/cookbooks
+
+Berksfile.lock
+
+
+# Bundler
+Gemfile.lock
+bin/*
+.bundle/*
+
+
+.kitchen/
+.kitchen.local.yml
