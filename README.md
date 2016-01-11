@@ -1,12 +1,12 @@
 # cbora12ccl-cookbook
 
-TODO: Enter the cookbook description here.
+Install Oracle 12c Client on a Linux 64 bit machine
 
 ## Supported Platforms
 
-TODO: List your supported platforms.
+Linux - RHEL
 
-## Attributes
+## Attributes --> See attributes file
 
 <table>
   <tr>
@@ -16,10 +16,10 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['cbora12ccl']['bacon']</tt></td>
+    <td><tt></tt></td>
     <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td></td>
+    <td><tt></tt></td>
   </tr>
 </table>
 
@@ -32,11 +32,13 @@ Include `cbora12ccl` in your node's `run_list`:
 ```json
 {
   "run_list": [
-    "recipe[cbora12ccl::default]"
+    "recipe[cbora12ccl::default]",
+    "recipe[cbora12ccl::oracle_users_groups_dirs_unix]",
+    "recipe[cbora12ccl::oracle_client_install_12c]"
   ]
 }
 ```
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Gowrish Mallipattana
